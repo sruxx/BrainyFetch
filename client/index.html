@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFetch Inspired - AI-Powered Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <header>
+                <h1><i class="fas fa-magic"></i> StudyFetch AI</h1>
+                <p>Transform your PDFs into interactive summaries, flashcards, and quizzes with AI magic ✨</p>
+            </header>
+            
+            <main>
+                <section class="upload-section" id="upload-section">
+                    <h2><i class="fas fa-cloud-upload-alt"></i> Upload Your PDF</h2>
+                    <div class="drop-area" id="drop-area">
+                        <p>✨ Drag & drop your PDF here or click to upload</p>
+                        <input type="file" id="fileElem" accept="application/pdf" style="display:none;">
+                        <label for="fileElem" class="upload-label">
+                            <i class="fas fa-file-pdf"></i> Choose PDF File
+                        </label>
+                        <div class="progress-bar" id="progressBar" style="display:none;">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="divider"></div>
+
+                <section class="content-section" id="content-section" style="display:none;">
+                    <h2><i class="fas fa-brain"></i> AI-Generated Summary</h2>
+                    <div id="summary"></div>
+                    
+                    <h3><i class="fas fa-cards-blank"></i> Interactive Flashcards</h3>
+                    <div id="flashcards"></div>
+                    
+                    <h3><i class="fas fa-question-circle"></i> Practice Quiz</h3>
+                    <div id="quizzes"></div>
+                </section>
+            </main>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <span>✨ Powered by AI • StudyFetch Inspired © 2025</span>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
